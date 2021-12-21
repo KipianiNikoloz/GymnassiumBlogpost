@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "bovKRcgmSDOjAX2eugcaXqE6/rlVh4cv2T41LdsjwT8/F1I8zFdjJGfRP5mSGn5SgbAnqXt4SnUjNYvMVS9mdA==",
+  "success": true,
+  "projectFilePath": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Core/Core.csproj",
+  "expectedPackageFiles": [
+    "/home/nikolozkipiani/.nuget/packages/automapper/10.1.1/automapper.10.1.1.nupkg.sha512",
+    "/home/nikolozkipiani/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/8.1.1/automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
+    "/home/nikolozkipiani/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
+    "/home/nikolozkipiani/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.0.0/microsoft.extensions.dependencyinjection.abstractions.3.0.0.nupkg.sha512",
+    "/home/nikolozkipiani/.nuget/packages/microsoft.extensions.options/3.0.0/microsoft.extensions.options.3.0.0.nupkg.sha512",
+    "/home/nikolozkipiani/.nuget/packages/microsoft.extensions.primitives/3.0.0/microsoft.extensions.primitives.3.0.0.nupkg.sha512",
+    "/home/nikolozkipiani/.nuget/packages/system.reflection.emit/4.7.0/system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

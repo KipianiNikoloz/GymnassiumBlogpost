@@ -1,0 +1,19 @@
+@media only screen and (max-width: 600px) {
+  .custom-filter-container {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .custom-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .custom-list-container {
+    justify-content: center!important;
+  }
+  div {
+    margin: 5px;
+  }
+}
