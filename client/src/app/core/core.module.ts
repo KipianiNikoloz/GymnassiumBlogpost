@@ -4,10 +4,12 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule } from "@angular/router";
 import { ToastrModule } from "ngx-toastr";
 import {NgxSpinnerModule} from "ngx-spinner";
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,8 @@ import {NgxSpinnerModule} from "ngx-spinner";
   ],
   exports: [
     NavbarComponent,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    FooterComponent
   ]
 })
 export class CoreModule { }

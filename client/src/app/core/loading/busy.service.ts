@@ -16,7 +16,7 @@ export class BusyService {
     this.spinnerService.show(undefined, {
       type: 'timer',
       bdColor: 'rgba(255, 255, 255, 0)',
-      color: '#eb6864'
+      color: '#78c2ad'
     });
 
     this.isLoading = true;

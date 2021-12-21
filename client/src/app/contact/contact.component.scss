@@ -1,0 +1,33 @@
+article {
+  width: 95%;
+  margin: auto;
+}
+
+app-contact-item {
+  width: 40%;
+}
+
+@media only screen and (max-width: 900px) {
+  article {
+    flex-direction: column;
+  }
+  app-contact-item {
+    width: 80%;
+    margin: 10px;
+  }
+
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  app-contact-item {
+    width: 90%;
+  }
+}
+
