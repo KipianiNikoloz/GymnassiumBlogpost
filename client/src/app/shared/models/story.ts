@@ -3,5 +3,6 @@ export interface Story {
   name: string;
   description: string;
   content: string;
+  publishDate: Date;
   author: string;
 }

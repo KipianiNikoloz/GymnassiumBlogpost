@@ -1,8 +1,8 @@
 import {Story} from "./story";
 
-export interface Pagination {
+export interface Pagination<T> {
   pageIndex: number;
   pageSize: number;
   count: number;
-  data: Story[];
+  data: T[];
 }

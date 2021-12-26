@@ -88,6 +88,11 @@
               "browserTarget": "client:build:development"
             }
           },
+          "options": {
+            "sslKey": "./src/ssl/cert.key",
+            "sslCert": "./src/ssl/example.crt",
+            "ssl": true
+          },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {

@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import {Author} from "../shared/models/author";
+import {AuthorParams} from "../shared/models/authorParams";
+import {AuthorService} from "./author.service";
 
 @Component({
   selector: 'app-authors',
@@ -7,9 +10,57 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AuthorsComponent implements OnInit {
 
-  constructor() { }
+  @ViewChild("search") searchInput!: ElementRef;
+
+  authors: Author[] = [];
+  authorParams: AuthorParams = new AuthorParams();
+
+  totalCount: number = 0;
+
+  sortOptions: any[] = [
+    { name: 'Alphabetical', value: 'name' },
+    { name: 'Birth(Earlier)', value: 'dateAsc' },
+    { name: 'Birth(Later)', value: 'dateDesc' }
+  ]
+
+  constructor(private authorService: AuthorService) { }
 
   ngOnInit(): void {
+    this.getAuthors();
+  }
+
+  getAuthors() {
+    this.authorService.getAuthors(this.authorParams).subscribe( value => {
+      this.authors = value.data;
+      this.totalCount = value.count;
+      this.authorParams.pageSize = value.pageSize;
+      this.authorParams.pageNumber = value.pageIndex;
+    })
+  }
+
+  changeSort(event: any) {
+    const element = event.currentTarget as HTMLInputElement
+    this.authorParams.sort = element.value;
+    this.getAuthors();
+  }
+
+  onPageChanged(event: any) {
+    if(this.authorParams.pageNumber !== event) {
+      this.authorParams.pageNumber = event;
+      this.getAuthors();
+    }
+  }
+
+  onSearch() {
+    this.authorParams.search = this.searchInput.nativeElement.value;
+    this.authorParams.pageNumber = 1;
+    this.getAuthors();
+  }
+
+  onReset() {
+    this.searchInput.nativeElement.value = '';
+    this.authorParams = new AuthorParams();
+    this.getAuthors();
   }
 
 }

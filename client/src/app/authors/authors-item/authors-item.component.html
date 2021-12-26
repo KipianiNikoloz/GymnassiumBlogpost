@@ -1,0 +1,8 @@
+<div data-aos="zoom-in" class="card" style="width: 18rem;" [routerLink]="['/authors/' + author.id]">
+  <img class="card-img-top" src="{{author.imageUrl || '../../../assets/account.png'}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{author.fullName}}</h5>
+    <p class="card-text">Birthday: {{author.birthday | date}}</p>
+    <a class="btn btn-primary" [routerLink]="['/authors/' + author.id]">Read works</a>
+  </div>
+</div>

@@ -25,10 +25,10 @@ export class StoriesService {
 
     if(storyParams.search) params = params.append('search', storyParams.search);
 
-    return this.http.get<Pagination>(`${this.baseUrl}story`, { observe: 'response', params: params} )
+    return this.http.get<Pagination<Story>>(`${this.baseUrl}story`, { observe: 'response', params: params} )
       .pipe(
         map( source => {
-          return source.body as Pagination;
+          return source.body as Pagination<Story>;
         })
       );
   }

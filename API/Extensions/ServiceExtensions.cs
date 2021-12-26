@@ -5,6 +5,7 @@ using API.Helpers;
 using Core.Interfaces;
 using Infrastructure;
 using Infrastructure.Data;
+using Infrastructure.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -57,7 +58,7 @@ namespace API.Extensions
             {   
                 opt.AddPolicy("CorsPolicy", policy =>
                 {
-                    policy.AllowAnyHeader().AllowAnyMethod().AllowCredentials().WithOrigins("http://localhost:4200");
+                    policy.AllowAnyHeader().AllowAnyMethod().AllowCredentials().WithOrigins("https://localhost:4200");
                 });
             });
             
@@ -81,6 +82,8 @@ namespace API.Extensions
             });
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+            services.AddScoped<ITokenService, TokenService>();
 
             services.AddAutoMapper(typeof(AutoMapperProfiles));
 
