@@ -13,6 +13,7 @@
       <ul>
         <li routerLink="/authors"><a>Authors</a></li>
         <li routerLink="/contact"><a>Contact</a></li>
+        <li *ngIf="(accountService.currentAdmin$ | async)" (click)="onLogout()"><i class="fas fa-user-shield"></i></li>
       </ul>
     </article>
   </section>

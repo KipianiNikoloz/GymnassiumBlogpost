@@ -53,6 +53,11 @@ i {
   font-size: 50px;
 }
 
+li i {
+  font-size: 30px;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 600px) {
   article:nth-child(2) {
     display: none;

@@ -9,8 +9,12 @@
     <div class="list-group">
       <a class="list-group-item list-group-item-action" *ngFor="let story of author.stories" [routerLink]="['/stories/' + story.id]">
         <div class="d-flex align-items-center justify-content-between">
-          <h6>{{story.name}}</h6>
-          <span>{{story.publishDate | date: 'longDate'}}</span>
+          <div style="width: 40%">
+            <h6>{{story.name}}</h6>
+          </div>
+          <div style="width: 60%" class="d-flex justify-content-end align-items-end">
+            <span>{{story.publishDate | date: 'longDate'}}</span>
+          </div>
         </div>
       </a>
     </div>

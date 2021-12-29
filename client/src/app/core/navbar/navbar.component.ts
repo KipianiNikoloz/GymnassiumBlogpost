@@ -1,6 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
 import {HttpClient} from "@angular/common/http";
+import {AccountService} from "../../login/account.service";
+import {ToastrService} from "ngx-toastr";
 
 @Component({
   selector: 'app-navbar',
@@ -9,8 +11,13 @@ import {HttpClient} from "@angular/common/http";
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, public accountService: AccountService, private toastr: ToastrService) { }
 
   ngOnInit(): void {
+  }
+
+  onLogout() {
+    this.accountService.logout();
+    this.toastr.success("Logged out");
   }
 }

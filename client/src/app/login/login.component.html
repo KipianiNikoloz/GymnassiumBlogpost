@@ -1,0 +1,18 @@
+<section class="container" style="margin-top: 140px">
+  <article>
+    <h3 class="mb-4">Log in</h3>
+    <form #loginForm='ngForm' (ngSubmit)="onSubmit()" autocomplete="off">
+      <div class="form-group d-flex align-items-center justify-content-between">
+        <label class="form-label"><i class="fas fa-user"></i></label>
+        <input type="text" placeholder="Username" class="form-control" name="username" [(ngModel)]="loginInfo.username" required>
+      </div>
+      <div class="form-group d-flex align-items-center justify-content-between my-4">
+        <label class="form-label"><i class="fas fa-lock"></i></label>
+        <input type="password" placeholder="Password" class="form-control" name="username" [(ngModel)]="loginInfo.password" required>
+      </div>
+      <div class="form-group d-flex justify-content-center">
+        <button [disabled]="loginForm.invalid" class="btn btn-primary" type="submit">Log in</button>
+      </div>
+    </form>
+  </article>
+</section>

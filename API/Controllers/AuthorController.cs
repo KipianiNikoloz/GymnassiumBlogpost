@@ -7,6 +7,7 @@ using AutoMapper;
 using Core.Entities;
 using Core.Interfaces;
 using Core.Specifications;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
@@ -86,6 +87,7 @@ namespace API.Controllers
             return BadRequest();
         }
 
+        [Authorize]
         [HttpPost]
         public async Task<ActionResult> AddAuthor([FromBody] AuthorDto author)
         {
@@ -103,6 +105,7 @@ namespace API.Controllers
             return BadRequest();
         }
 
+        [Authorize]
         [HttpPut]
         public async Task<ActionResult> UpdateAuthor([FromBody] AuthorDto author, string name)
         {
@@ -124,6 +127,7 @@ namespace API.Controllers
             return BadRequest();
         }
 
+        [Authorize]
         [HttpDelete("{name}")]
         public async Task<ActionResult> DeleteAuthor(string name)
         {

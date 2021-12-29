@@ -1,5 +1,7 @@
 using System;
 using Core.Entities;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
@@ -7,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Infrastructure.Data
 {
-    public class DataContext: DbContext
-    {
+    public class DataContext: IdentityDbContext<AppUser, AppRole, int, IdentityUserClaim<int>, 
+        AppUserRole, IdentityUserLogin<int>, IdentityRoleClaim<int>, IdentityUserToken<int>> {
         public DbSet<Author> Authors { get; set; }
         public DbSet<Story> Stories { get; set; }
         
@@ -17,6 +19,18 @@ namespace Infrastructure.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            
+            modelBuilder.Entity<AppUser>()
+                .HasMany(u => u.UserRoles)
+                .WithOne(u => u.User)
+                .HasForeignKey(u => u.UserId)
+                .IsRequired();
+            
+            modelBuilder.Entity<AppRole>()
+                .HasMany(u => u.UserRoles)
+                .WithOne(u => u.Role)
+                .HasForeignKey(u => u.RoleId)
+                .IsRequired();
             
             modelBuilder.ApplyUtcDateTimeConverter();
         }

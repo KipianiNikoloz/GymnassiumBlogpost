@@ -9,6 +9,7 @@ using AutoMapper;
 using Core.Entities;
 using Core.Interfaces;
 using Core.Specifications;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
@@ -54,6 +55,7 @@ namespace API.Controllers
             return BadRequest();
         }
 
+        [Authorize]
         [HttpPost]
         public async Task<ActionResult> AddStory([FromBody] StoryDto item)
         {
@@ -73,6 +75,7 @@ namespace API.Controllers
             return BadRequest();
         }
 
+        [Authorize]
         [HttpPut]
         public async Task<ActionResult> UpdateStory([FromBody] StoryDto item, string name)
         {
@@ -94,6 +97,7 @@ namespace API.Controllers
             return BadRequest();
         }
 
+        [Authorize]
         [HttpDelete("{name}")]
         public async Task<ActionResult> DeleteStory(string name)
         {

@@ -20,6 +20,8 @@ namespace API.Helpers
             CreateMap<Author, AuthorToReturnDto>();
 
             CreateMap<AuthorDto, Author>();
+
+            CreateMap<RegisterDto, AppUser>();
         }
     }
 }

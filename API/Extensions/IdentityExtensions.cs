@@ -21,7 +21,10 @@ namespace API.Extensions
                     opt.Password.RequireUppercase = false;
                     opt.Password.RequiredLength = 6;
                 })
+                .AddRoles<AppRole>()
+                .AddRoleManager<RoleManager<AppRole>>()
                 .AddSignInManager<SignInManager<AppUser>>()
+                .AddRoleValidator<RoleValidator<AppRole>>()
                 .AddEntityFrameworkStores<DataContext>();
             
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
