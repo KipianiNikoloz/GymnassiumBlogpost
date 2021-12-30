@@ -5,6 +5,7 @@ import {StoryParams} from "../shared/models/storyParams";
 import {Pagination} from "../shared/models/pagination";
 import {map} from "rxjs/operators";
 import {Story} from "../shared/models/story";
+import {AddStory} from "../shared/models/addStory";
 
 @Injectable({
   providedIn: 'root'
@@ -35,5 +36,21 @@ export class StoriesService {
 
   getStory(id: number) {
     return this.http.get<Story>(`${this.baseUrl}story/${id}`);
+  }
+
+  addStory(storyDto: AddStory) {
+    return this.http.post(`${this.baseUrl}story/`, storyDto);
+  }
+
+  updateStory(storyDto: AddStory, name: string) {
+    let params = new HttpParams();
+
+    if(name) params = params.append('name', name);
+
+    return this.http.put(`${this.baseUrl}story/`, storyDto, { observe: "response", params: params});
+  }
+
+  deleteStory(name: string) {
+    return this.http.delete(`${this.baseUrl}story/${name}`);
   }
 }

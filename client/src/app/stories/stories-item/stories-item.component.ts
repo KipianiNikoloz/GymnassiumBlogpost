@@ -1,5 +1,8 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Story} from "../../shared/models/story";
+import {AccountService} from "../../login/account.service";
+import {StoriesService} from "../stories.service";
+import {ToastrService} from "ngx-toastr";
 
 @Component({
   selector: 'app-stories-item',
@@ -9,10 +12,18 @@ import {Story} from "../../shared/models/story";
 export class StoriesItemComponent implements OnInit {
 
   @Input() story!: Story;
+  @Output() storyDeletedEmitter: EventEmitter<void> = new EventEmitter<void>();
 
-  constructor() { }
+  constructor(public accountService: AccountService, private storyService: StoriesService, private toastr: ToastrService) { }
 
   ngOnInit(): void {
+  }
+
+  onDelete() {
+    this.storyService.deleteStory(this.story.name).subscribe( () => {
+      this.storyDeletedEmitter.emit();
+      this.toastr.success("მოთხრობა წაიშალა!")
+    })
   }
 
 }

@@ -9,8 +9,7 @@ import {Contact} from "../shared/models/contact";
 export class ContactComponent implements OnInit {
 
   contacts: Contact[] = [
-    new Contact("Nikoloz Kipiani", "Developer", "598935455", "nikolozkipiani2005@gmail.com", "#737373"),
-    new Contact("Maia Rostiashvili", "Teacher", "555555555", "mail@mail.com", "#78c2ad")
+    new Contact("მაია როსტიაშვილი", "მასწავლებელი", "555555555", "mail@mail.com", "#78c2ad")
   ]
 
   constructor() { }

@@ -39,6 +39,7 @@
               "./node_modules/bootswatch/dist/minty/bootstrap.css",
               "./node_modules/aos/dist/aos.css",
               "./node_modules/ngx-toastr/toastr.css",
+              "./node_modules/alk-rounded-nusx-med/css/alk-rounded-nusx-med.min.css",
               "src/styles.scss"
             ],
             "scripts": [

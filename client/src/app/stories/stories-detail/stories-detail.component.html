@@ -1,5 +1,6 @@
 <section *ngIf="story" class="container m-auto d-flex justify-content-center flex-column align-items-start" style="margin-top: 95px!important;">
   <h2>{{story.name}}</h2>
   <p class="mt-2">{{story.content}}</p>
-  <a class="mt-2">Author: {{story.author}}</a>
+  <p class="mt-2">გამოქვეყნების თარიღი: {{story.publishDate | date: 'dd/MM/YYYY'}}</p>
+  <a class="mt-2">ავტორი: {{story.author}}</a>
 </section>

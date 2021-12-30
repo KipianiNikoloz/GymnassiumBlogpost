@@ -6,6 +6,7 @@ import {map} from "rxjs/operators";
 import {Story} from "../shared/models/story";
 import {AuthorParams} from "../shared/models/authorParams";
 import {Author} from "../shared/models/author";
+import {AddAuthor} from "../shared/models/addAuthor";
 
 @Injectable({
   providedIn: 'root'
@@ -56,7 +57,28 @@ export class AuthorService {
     return this.http.get<Author>(`${this.baseUrl}author/${id}`);
   }
 
+
   getAuthorWithStories(id: number) {
     return this.http.get<Author>(`${this.baseUrl}author/included/${id}`);
+  }
+
+  getAuthorWithName(name: string) {
+    return this.http.get<Author>(`${this.baseUrl}author/get-by-name/${name}`);
+  }
+
+  addAuthor(authorDto: AddAuthor) {
+    return this.http.post(`${this.baseUrl}author`, authorDto);
+  }
+
+  updateAuthor(authorDto: AddAuthor, name: string) {
+    let params = new HttpParams();
+
+    if(name) params = params.append('name', name);
+
+    return this.http.put(`${this.baseUrl}author`, authorDto, { observe: 'response', params: params});
+  }
+
+  deleteAuthor(name: string) {
+    return this.http.delete(`${this.baseUrl}author/${name}`);
   }
 }

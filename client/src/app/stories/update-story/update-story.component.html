@@ -1,0 +1,25 @@
+<section class="container" style="margin-top: 105px" *ngIf="story && baseName">
+  <h2 class="text-primary">ნაწარმოები: {{baseName}}</h2>
+  <form #authorAddForm='ngForm' class="mt-3" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label class="form-label">სახელი</label>
+      <input type="text" class="form-control" [(ngModel)]="story.name" name="name" required>
+    </div>
+    <div class="form-group my-3">
+      <label class="form-label">მოკლე აღწერა</label>
+      <input type="text" class="form-control" [(ngModel)]="story.description" name="description" required>
+    </div>
+    <div class="form-group">
+      <label class="form-label">ტექსტი</label>
+      <textarea name="content" id="" cols="30" rows="15" class="form-control" [(ngModel)]="story.content"></textarea>
+    </div>
+    <div class="form-group mt-3">
+      <label class="form-label">გამოქვეყნების თარიღი</label>
+      <input type="date" class="form-control" [(ngModel)]="story.publishDate" name="publishDate" required>
+    </div>
+    <div class="form-group mt-3">
+      <button class="btn btn-warning" type="submit" [disabled]="authorAddForm.invalid">რედაქტირება</button>
+      <button class="btn btn-info mx-3" type="button" (click)="reset()">გასუფთავება</button>
+    </div>
+  </form>
+</section>

@@ -18,9 +18,9 @@ export class StoriesComponent implements OnInit {
   totalCount: number = 0;
 
   sortOptions: any[] = [
-    { name: 'Alphabetical', value: 'name' },
-    { name: 'Date Posted(Earlier)', value: 'dateAsc' },
-    { name: 'Date Posted(Later)', value: 'dateDesc' }
+    { name: 'ანბანის მიხედვით', value: 'name' },
+    { name: 'გამოქვეყნების თარიღი(ადრე)', value: 'dateAsc' },
+    { name: 'გამოქვეყნების თარიღი(გვიან)', value: 'dateDesc' }
   ]
 
   constructor(private storyService: StoriesService) { }
@@ -60,6 +60,10 @@ export class StoriesComponent implements OnInit {
   onReset() {
     this.searchInput.nativeElement.value = '';
     this.storyParams = new StoryParams();
+    this.getStories();
+  }
+
+  onDeleted() {
     this.getStories();
   }
 

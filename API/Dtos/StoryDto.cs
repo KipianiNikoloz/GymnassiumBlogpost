@@ -10,6 +10,6 @@ namespace API.Dtos
         
         public DateTime PublishDate { get; set; }
 
-        public int? AuthorId { get; set; }
+        public int AuthorId { get; set; }
     }
 }

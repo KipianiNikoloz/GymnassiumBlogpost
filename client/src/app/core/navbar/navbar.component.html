@@ -2,17 +2,17 @@
   <section>
     <article>
       <ul>
-        <li><a style="color: #fff" routerLink="/">Home</a></li>
-        <li><a style="color: #fff" routerLink="/stories">Stories</a></li>
+        <li><a style="color: #fff" routerLink="/">მთავარი</a></li>
+        <li><a style="color: #fff" routerLink="/stories">მოთხრობები</a></li>
       </ul>
     </article>
     <article>
-      <i class="far fa-edit"></i>
+      <i class="fas fa-feather-alt"></i>
     </article>
     <article>
       <ul>
-        <li routerLink="/authors"><a>Authors</a></li>
-        <li routerLink="/contact"><a>Contact</a></li>
+        <li routerLink="/authors"><a>ავტორები</a></li>
+        <li routerLink="/contact"><a>კონტაქტი</a></li>
         <li *ngIf="(accountService.currentAdmin$ | async)" (click)="onLogout()"><i class="fas fa-user-shield"></i></li>
       </ul>
     </article>

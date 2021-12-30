@@ -58,7 +58,7 @@ namespace API.Controllers
         [HttpGet]
         public async Task<ActionResult<Pagination<AuthorToReturnDto>>> GetAuthors([FromQuery] AuthorParams authorParams)
         {
-            var spec = new AuthorWithFiltersAndStoriesSpec(authorParams);
+            var spec = new AuthorsWithFiltersSpec(authorParams);
 
             var items = await _unitOfWork.AuthorRepository.ListAsync(spec);
 
@@ -76,7 +76,21 @@ namespace API.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<AuthorToReturnDto>> GetAuthor(int id)
         {
-            var spec = new AuthorWithFiltersAndStoriesSpec(id);
+            var spec = new AuthorsWithFiltersSpec(id);
+
+            var item = await _unitOfWork.AuthorRepository.GetEntityWithSpec(spec);
+
+            var itemToReturn = _mapper.Map<Author, AuthorToReturnDto>(item);
+
+            if(itemToReturn != null) return Ok(itemToReturn);
+
+            return BadRequest();
+        }
+        
+        [HttpGet("get-by-name/{name}")]
+        public async Task<ActionResult<AuthorToReturnDto>> GetAuthorWithName(string name)
+        {
+            var spec = new AuthorsWithFiltersSpec(name);
 
             var item = await _unitOfWork.AuthorRepository.GetEntityWithSpec(spec);
 

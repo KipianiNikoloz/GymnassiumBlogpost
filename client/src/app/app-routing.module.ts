@@ -6,7 +6,9 @@ const routes: Routes = [
   { path: 'stories', loadChildren: () => import('./stories/stories.module').then(m => m.StoriesModule) },
   { path: 'authors', loadChildren: () => import('./authors/authors.module').then(m => m.AuthorsModule) },
   { path: 'contact', loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule) },
-  { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule) }
+  { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule) },
+  { path: 'errors', loadChildren: () => import('./errors/errors.module').then(m => m.ErrorsModule) },
+  { path: '**', redirectTo: ''}
 ];
 
 @NgModule({

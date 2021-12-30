@@ -2,6 +2,7 @@ import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {Author} from "../shared/models/author";
 import {AuthorParams} from "../shared/models/authorParams";
 import {AuthorService} from "./author.service";
+import {AccountService} from "../login/account.service";
 
 @Component({
   selector: 'app-authors',
@@ -18,12 +19,12 @@ export class AuthorsComponent implements OnInit {
   totalCount: number = 0;
 
   sortOptions: any[] = [
-    { name: 'Alphabetical', value: 'name' },
-    { name: 'Birth(Earlier)', value: 'dateAsc' },
-    { name: 'Birth(Later)', value: 'dateDesc' }
+    { name: 'ანბანის მიხედვით', value: 'name' },
+    { name: 'დაბადების თარიღი(ადრე)', value: 'dateAsc' },
+    { name: 'დაბადების თარიღი(გვიან)', value: 'dateDesc' }
   ]
 
-  constructor(private authorService: AuthorService) { }
+  constructor(private authorService: AuthorService, public accountService: AccountService) { }
 
   ngOnInit(): void {
     this.getAuthors();
@@ -60,6 +61,10 @@ export class AuthorsComponent implements OnInit {
   onReset() {
     this.searchInput.nativeElement.value = '';
     this.authorParams = new AuthorParams();
+    this.getAuthors();
+  }
+
+  onDelete() {
     this.getAuthors();
   }
 

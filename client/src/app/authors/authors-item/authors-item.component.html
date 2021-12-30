@@ -1,8 +1,12 @@
-<div data-aos="zoom-in" class="card" style="width: 18rem;" [routerLink]="['/authors/' + author.id]">
+<div data-aos="zoom-in" class="card" style="width: 18rem;">
   <img class="card-img-top" src="{{author.imageUrl || '../../../assets/account.png'}}" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">{{author.fullName}}</h5>
-    <p class="card-text">Birthday: {{author.birthday | date}}</p>
-    <a class="btn btn-primary" [routerLink]="['/authors/' + author.id]">Read works</a>
+    <p class="card-text">დაბადების თარიღი: {{author.birthday | date: 'dd/MM/YYYY'}}</p>
+    <a class="btn btn-primary" [routerLink]="['/authors/' + author.id]">დეტალურად</a>
+    <div class="d-flex align-items-center justify-content-start mt-1" *ngIf="(accountService.currentAdmin$ | async)">
+      <a class="btn btn-warning" [routerLink]="['/authors/update/' + author.id]">რედაქტირება</a>
+      <a class="btn btn-danger mx-1" (click)="onDelete()">წაშლა</a>
+    </div>
   </div>
 </div>
