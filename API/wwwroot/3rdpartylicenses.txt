@@ -16,6 +16,9 @@ MIT
 @angular/router
 MIT
 
+alk-rounded-nusx-med
+CC-BY-NC-ND 4.0
+
 aos
 MIT
 The MIT License (MIT)
