@@ -29,6 +29,7 @@ namespace API.Controllers
             _mapper = mapper;
         }
         
+        [Authorize]
         [HttpPost("register")]
         public async Task<ActionResult<AdminDto>> Register(RegisterDto registerDto)
         {
