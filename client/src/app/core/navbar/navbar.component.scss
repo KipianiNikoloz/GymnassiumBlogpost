@@ -70,3 +70,18 @@ li i {
     padding: 0;
   }
 }
+
+@media only screen and (max-width: 420px) {
+  li {
+    font-size: 15px;
+  }
+  section {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  li {
+    font-size: 13px;
+  }
+}

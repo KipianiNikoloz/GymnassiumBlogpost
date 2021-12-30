@@ -5,6 +5,8 @@ import { RouterModule } from "@angular/router";
 import { ToastrModule } from "ngx-toastr";
 import {NgxSpinnerModule} from "ngx-spinner";
 import { FooterComponent } from './footer/footer.component';
+import {BsDropdownModule} from "ngx-bootstrap/dropdown";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { FooterComponent } from './footer/footer.component';
       positionClass: 'toast-bottom-right',
       preventDuplicates: true
     }),
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    BsDropdownModule.forRoot()
   ],
   exports: [
     NavbarComponent,
