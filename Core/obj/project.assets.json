@@ -944,11 +944,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Core/Core.csproj",
+      "projectUniqueName": "/home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/Core/Core.csproj",
       "projectName": "Core",
-      "projectPath": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Core/Core.csproj",
+      "projectPath": "/home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/Core/Core.csproj",
       "packagesPath": "/home/nikolozkipiani/.nuget/packages/",
-      "outputPath": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Core/obj/",
+      "outputPath": "/home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/Core/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/nikolozkipiani/.nuget/NuGet/NuGet.Config"

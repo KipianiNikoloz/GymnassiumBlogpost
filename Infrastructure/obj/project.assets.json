@@ -1412,11 +1412,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Infrastructure/Infrastructure.csproj",
+      "projectUniqueName": "/home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/Infrastructure/Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Infrastructure/Infrastructure.csproj",
+      "projectPath": "/home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/Infrastructure/Infrastructure.csproj",
       "packagesPath": "/home/nikolozkipiani/.nuget/packages/",
-      "outputPath": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Infrastructure/obj/",
+      "outputPath": "/home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/Infrastructure/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/nikolozkipiani/.nuget/NuGet/NuGet.Config"
@@ -1431,8 +1431,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Core/Core.csproj": {
-              "projectPath": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Core/Core.csproj"
+            "/home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/Core/Core.csproj": {
+              "projectPath": "/home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/Core/Core.csproj"
             }
           }
         }
@@ -1489,6 +1489,9 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

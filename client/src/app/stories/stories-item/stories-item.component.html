@@ -1,12 +1,13 @@
-<div data-aos="zoom-in" class="card" style="width: 18rem; height: 250px">
+<div class="card text-center" style="width: 50%">
+  <div class="card-header">
+    {{story.author}}
+  </div>
   <div class="card-body">
     <h5 class="card-title">{{story.name}}</h5>
-    <p class="card-text">{{story.description}}</p>
-    <p class="card-text">ავტორი: {{story.author}}</p>
-    <a href="#" class="btn btn-primary" [routerLink]="['/stories/' + story.id]">წაკითხვა</a>
-    <div class="d-flex align-items-center justify-content-start mt-1" *ngIf="(accountService.currentAdmin$ | async)">
-      <a class="btn btn-warning" [routerLink]="['/stories/update/' + story.id]">რედაქტირება</a>
-      <a class="btn btn-danger mx-1" (click)="onDelete()">წაშლა</a>
-    </div>
+    <p class="card-text">{{story.description}}.</p>
+    <a href="#" class="btn btn-primary">წაკითხვა</a>
+  </div>
+  <div class="card-footer text-muted">
+    {{story.publishDate | date:'dd/mm/yyyy'}}
   </div>
 </div>
