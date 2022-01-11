@@ -60,3 +60,18 @@ div {
   }
 
 }
+
+@media only screen and (max-width: 450px) {
+  section {
+    margin-top: 40px;
+  }
+  h2 {
+    font-size: 38px;
+  }
+  p {
+    font-size: 18px;
+  }
+  div {
+    width: 70%;
+  }
+}

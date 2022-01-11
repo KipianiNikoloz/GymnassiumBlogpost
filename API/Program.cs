@@ -27,6 +27,7 @@ namespace API
                 try
                 {
                     var context = services.GetService<DataContext>();
+
                     await context.Database.MigrateAsync();
                 }
                 catch (Exception ex)

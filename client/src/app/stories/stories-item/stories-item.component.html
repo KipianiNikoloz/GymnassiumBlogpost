@@ -2,6 +2,7 @@
   <div class="card-header">
     {{story.author}}
   </div>
+<div data-aos="zoom-in" style="width: 18rem; height: 200px" class="card" [class.activated]="(accountService.currentAdmin$ | async)">
   <div class="card-body">
     <h5 class="card-title">{{story.name}}</h5>
     <p class="card-text">{{story.description}}.</p>

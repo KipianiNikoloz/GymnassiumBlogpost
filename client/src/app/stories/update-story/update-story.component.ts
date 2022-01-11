@@ -26,20 +26,7 @@ export class UpdateStoryComponent implements OnInit {
   constructor(private storyService: StoriesService, private route: ActivatedRoute, private toastr: ToastrService, private router: Router, private authorService: AuthorService) { }
 
   ngOnInit(): void {
-    this.id = +(this.route.snapshot.paramMap.get("id") as string);
-
-    this.storyService.getStory(this.id).subscribe( value => {
-      this.story.name = value.name;
-      this.story.description = value.description;
-      this.story.content = value.content;
-      this.story.publishDate = new Date(value.publishDate).toISOString().split('T')[0];
-      this.baseName = this.story.name
-
-      this.authorService.getAuthorWithName(value.author).subscribe( response => {
-        this.story.authorId = response.id;
-      })
-
-    })
+    this.getStory()
   }
 
   onSubmit() {
@@ -54,6 +41,23 @@ export class UpdateStoryComponent implements OnInit {
     this.story.description = '';
     this.story.content = '';
     this.story.publishDate = '';
+  }
+
+  getStory() {
+    this.id = +(this.route.snapshot.paramMap.get("id") as string);
+
+    this.storyService.getStory(this.id).subscribe( value => {
+      this.story.name = value.name;
+      this.story.description = value.description;
+      this.story.content = value.content;
+      this.story.publishDate = new Date(value.publishDate).toISOString().split('T')[0];
+      this.baseName = this.story.name
+
+      this.authorService.getAuthorWithName(value.author).subscribe( response => {
+        this.story.authorId = response.id;
+      })
+
+    })
   }
 
 }
