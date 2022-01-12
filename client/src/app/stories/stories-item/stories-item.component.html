@@ -1,10 +1,11 @@
-<div class="card text-center custom-card-class-selector" style="width: 50%">
+<div class="card text-center custom-card-class-selector" style="width: 401px" [ngStyle]="{'height': (accountService.currentAdmin$ | async) ? '270px': '250px'}">
   <div class="card-header">
     {{story.author}}
   </div>
   <div class="card-body">
     <h5 class="card-title">{{story.name}}</h5>
-    <p class="card-text">{{story.description}}</p>
+    <p *ngIf="story.description.length > 90" class="card-text">{{story.description | slice:1:90}}...</p>
+    <p *ngIf="story.description.length <= 90" class="card-text">{{story.description}}</p>
     <div>
       <a class="btn btn-primary" [routerLink]="['/stories/updated' + story.id]">წაკითხვა</a>
       <a class="btn btn-warning m-2" *ngIf="(accountService.currentAdmin$ | async)" [routerLink]="['/stories/update/' + story.id]">რედაქტირება</a>
