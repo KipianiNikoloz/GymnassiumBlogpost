@@ -1,3 +1,18 @@
 .activated {
   height: 245px!important;
 }
+
+@media only screen and (max-width: 600px) {
+  .custom-card-class-selector {
+    width: 100%!important;
+  }
+
+  .custom-btn-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between!important;
+  }
+}
+
