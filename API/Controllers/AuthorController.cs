@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using API.Controllers.Base;
 using API.Dtos;
+using API.Extensions;
 using API.Helpers;
 using AutoMapper;
 using Core.Entities;
@@ -105,6 +106,8 @@ namespace API.Controllers
         [HttpPost]
         public async Task<ActionResult> AddAuthor([FromBody] AuthorDto author)
         {
+            author.Birthday = author.Birthday.SetKindUtc();
+            
             var authorToPost = _mapper.Map<Author>(author);
 
             if (authorToPost != null) await _unitOfWork.AuthorRepository.AddItem(authorToPost);
@@ -123,6 +126,8 @@ namespace API.Controllers
         [HttpPut]
         public async Task<ActionResult> UpdateAuthor([FromBody] AuthorDto author, string name)
         {
+            author.Birthday = author.Birthday.SetKindUtc();
+            
             var spec = new AuthorsWithFiltersSpec(name);
 
             var authorToUpdate = await _unitOfWork.AuthorRepository.GetEntityWithSpec(spec);

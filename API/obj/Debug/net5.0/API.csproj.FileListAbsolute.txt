@@ -94,7 +94,6 @@
 /home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/API/bin/Debug/net5.0/Infrastructure.dll
 /home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/API/bin/Debug/net5.0/Core.pdb
 /home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/API/bin/Debug/net5.0/Infrastructure.pdb
-/home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/API/obj/Debug/net5.0/API.csprojAssemblyReference.cache
 /home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/API/obj/Debug/net5.0/API.GeneratedMSBuildEditorConfig.editorconfig
 /home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/API/obj/Debug/net5.0/API.AssemblyInfoInputs.cache
 /home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/API/obj/Debug/net5.0/API.AssemblyInfo.cs
@@ -102,7 +101,6 @@
 /home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/API/obj/Debug/net5.0/API.MvcApplicationPartsAssemblyInfo.cs
 /home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/API/obj/Debug/net5.0/API.MvcApplicationPartsAssemblyInfo.cache
 /home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/API/obj/Debug/net5.0/staticwebassets/API.StaticWebAssets.Manifest.cache
-/home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/API/obj/Debug/net5.0/staticwebassets/API.StaticWebAssets.xml
 /home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/API/obj/Debug/net5.0/scopedcss/bundle/API.styles.css
 /home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/API/obj/Debug/net5.0/API.RazorTargetAssemblyInfo.cache
 /home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/API/obj/Debug/net5.0/API.csproj.CopyComplete
@@ -110,3 +108,5 @@
 /home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/API/obj/Debug/net5.0/ref/API.dll
 /home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/API/obj/Debug/net5.0/API.pdb
 /home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/API/obj/Debug/net5.0/API.genruntimeconfig.cache
+/home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/API/bin/Debug/net5.0/API.StaticWebAssets.xml
+/home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/API/obj/Debug/net5.0/API.csproj.AssemblyReference.cache

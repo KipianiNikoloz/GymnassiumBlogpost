@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using API.Controllers.Base;
 using API.Dtos;
+using API.Extensions;
 using API.Helpers;
 using AutoMapper;
 using Core.Entities;
@@ -59,7 +60,9 @@ namespace API.Controllers
         [HttpPost]
         public async Task<ActionResult> AddStory([FromBody] StoryDto item)
         {
-            item.PublishDate = DateTime.UtcNow;
+            item.PublishDate = DateTime.Now;
+
+            item.PublishDate = item.PublishDate.SetKindUtc();
             
             var story = _mapper.Map<Story>(item);
 
@@ -79,6 +82,8 @@ namespace API.Controllers
         [HttpPut]
         public async Task<ActionResult> UpdateStory([FromBody] StoryDto item, string name)
         {
+            item.PublishDate = item.PublishDate.SetKindUtc();
+            
             var spec = new StoriesWithAuthorFilterSpecification(name);
             
             var storyToUpdate = await _unitOfWork.StoryRepository.GetEntityWithSpec(spec);

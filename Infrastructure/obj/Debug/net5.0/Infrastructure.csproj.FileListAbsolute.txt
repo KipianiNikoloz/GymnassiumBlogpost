@@ -24,7 +24,6 @@
 /home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/Infrastructure/bin/Debug/net5.0/Infrastructure.pdb
 /home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/Infrastructure/bin/Debug/net5.0/Core.dll
 /home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/Infrastructure/bin/Debug/net5.0/Core.pdb
-/home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/Infrastructure/obj/Debug/net5.0/Infrastructure.csprojAssemblyReference.cache
 /home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/Infrastructure/obj/Debug/net5.0/Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
 /home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/Infrastructure/obj/Debug/net5.0/Infrastructure.AssemblyInfoInputs.cache
 /home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/Infrastructure/obj/Debug/net5.0/Infrastructure.AssemblyInfo.cs
@@ -34,3 +33,4 @@
 /home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/Infrastructure/obj/Debug/net5.0/ref/Infrastructure.dll
 /home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/Infrastructure/obj/Debug/net5.0/Infrastructure.pdb
 /home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/Infrastructure/obj/Debug/net5.0/Infrastructure.genruntimeconfig.cache
+/home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/Infrastructure/obj/Debug/net5.0/Infrastructure.csproj.AssemblyReference.cache
