@@ -1,0 +1,1 @@
+<button type="menu" *ngIf="(accountService.currentAdmin$ | async)" (click)="accountService.logout()"><i class="fas fa-user-shield"></i></button>

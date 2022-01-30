@@ -7,11 +7,13 @@ import {NgxSpinnerModule} from "ngx-spinner";
 import { FooterComponent } from './footer/footer.component';
 import {BsDropdownModule} from "ngx-bootstrap/dropdown";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   declarations: [
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    LogoutComponent
   ],
   imports: [
     CommonModule,
@@ -26,7 +28,8 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
   exports: [
     NavbarComponent,
     NgxSpinnerModule,
-    FooterComponent
+    FooterComponent,
+    LogoutComponent
   ]
 })
 export class CoreModule { }

@@ -545,7 +545,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.10"
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.1"
         },
         "compile": {
           "bin/placeholder/Core.dll": {}
@@ -561,7 +561,7 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "Core": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.1",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.10",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.1",
           "Microsoft.EntityFrameworkCore": "6.0.1",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.3",
           "System.IdentityModel.Tokens.Jwt": "6.15.1"
@@ -1511,12 +1511,12 @@
     "Core/1.0.0": {
       "type": "project",
       "path": "../Core/Core.csproj",
-      "msbuildProject": "../Core/Core.csproj"
+      "msbuildProject": "../../../../../mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Core/Core.csproj"
     },
     "Infrastructure/1.0.0": {
       "type": "project",
       "path": "../Infrastructure/Infrastructure.csproj",
-      "msbuildProject": "../Infrastructure/Infrastructure.csproj"
+      "msbuildProject": "../../../../../mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Infrastructure/Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1526,6 +1526,7 @@
       "Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.1",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.1",
+      "Microsoft.EntityFrameworkCore >= 6.0.1",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.1",
       "Swashbuckle.AspNetCore >= 6.2.3",
       "System.IdentityModel.Tokens.Jwt >= 6.15.1"
@@ -1537,11 +1538,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/API/API.csproj",
+      "projectUniqueName": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/API/API.csproj",
       "projectName": "API",
-      "projectPath": "/home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/API/API.csproj",
+      "projectPath": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/API/API.csproj",
       "packagesPath": "/home/nikolozkipiani/.nuget/packages/",
-      "outputPath": "/home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/API/obj/",
+      "outputPath": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/nikolozkipiani/.nuget/NuGet/NuGet.Config"
@@ -1556,11 +1557,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/Core/Core.csproj": {
-              "projectPath": "/home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/Core/Core.csproj"
+            "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Core/Core.csproj": {
+              "projectPath": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Core/Core.csproj"
             },
-            "/home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/Infrastructure/Infrastructure.csproj": {
-              "projectPath": "/home/nikolozkipiani/Documents/Web/GymnassiumBlogpost/Infrastructure/Infrastructure.csproj"
+            "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Infrastructure/Infrastructure.csproj": {
+              "projectPath": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Infrastructure/Infrastructure.csproj"
             }
           }
         }
@@ -1584,6 +1585,10 @@
             "version": "[6.0.1, )"
           },
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[6.0.1, )"
+          },
+          "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[6.0.1, )"
           },

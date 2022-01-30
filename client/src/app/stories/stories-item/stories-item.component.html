@@ -1,4 +1,4 @@
-<div class="card text-center custom-card-class-selector" style="width: 401px" [ngStyle]="{'height': (accountService.currentAdmin$ | async) ? '270px': '250px'}">
+<div data-aos="zoom-in" class="card text-center custom-card-class-selector" style="width: 401px" [ngStyle]="{'height': (accountService.currentAdmin$ | async) ? '270px': '250px'}">
   <div class="card-header">
     {{story.author}}
   </div>
@@ -7,7 +7,7 @@
     <p *ngIf="story.description.length > 90" class="card-text">{{story.description | slice:1:90}}...</p>
     <p *ngIf="story.description.length <= 90" class="card-text">{{story.description}}</p>
     <div>
-      <a class="btn btn-primary" [routerLink]="['/stories/updated' + story.id]">წაკითხვა</a>
+      <a class="btn btn-primary" [routerLink]="['/stories/' + story.id]">წაკითხვა</a>
       <a class="btn btn-warning m-2" *ngIf="(accountService.currentAdmin$ | async)" [routerLink]="['/stories/update/' + story.id]">რედაქტირება</a>
       <a class="btn btn-danger" *ngIf="(accountService.currentAdmin$ | async)" (click)="onDelete()">წაშლა</a>
     </div>

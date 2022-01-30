@@ -7,13 +7,12 @@
       </ul>
     </article>
     <article>
-      <i class="fas fa-feather-alt"></i>
+      <i class="fas fa-feather-alt" routerLink="/"></i>
     </article>
     <article>
       <ul>
         <li routerLink="/authors"><a>ავტორები</a></li>
         <li routerLink="/contact"><a>კონტაქტი</a></li>
-        <li *ngIf="(accountService.currentAdmin$ | async)" (click)="onLogout()"><i class="fas fa-user-shield"></i></li>
       </ul>
     </article>
   </section>
