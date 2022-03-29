@@ -1,7 +1,8 @@
 <div data-aos="flip-up" [routerLink]="['/stories/' + story.id]" class="card text-white bg-primary mb-3" style="max-width: 18rem; height: 200px; width: 300px">
-  <div class="card-header">{{story.name}}</div>
+  <div class="card-header">{{story.author}}</div>
   <div class="card-body">
-    <h5 class="card-title">ავტორი: {{story.author}}</h5>
-    <p class="card-text">{{story.description}}</p>
+    <h5 class="card-title">{{story.name}}</h5>
+    <p *ngIf="story.description.length > 90" class="card-text">{{story.description | slice:0:90}}...</p>
+    <p *ngIf="story.description.length <= 90" class="card-text">{{story.description}}</p>
   </div>
 </div>

@@ -4,19 +4,19 @@
   <form #storyAddForm='ngForm' (ngSubmit)="onSubmit()" class="mt-4">
     <div class="form-group">
       <label class="form-label">სახელი</label>
-      <input type="text" class="form-control" name="name" [(ngModel)]="story.name">
+      <input type="text" class="form-control" name="name" [(ngModel)]="story.name" required>
     </div>
     <div class="form-group my-3">
-      <label class="form-label">მოკლე აღწერა</label>
-      <input type="text" class="form-control" name="description" [(ngModel)]="story.description">
+      <label class="form-label">წინასიტყვაობა</label>
+      <textarea name="description" cols="30" rows="5" class="form-control" [(ngModel)]="story.description" required></textarea>
     </div>
     <div class="form-group">
       <label class="form-label">გამოქვეყნების თარიღი</label>
-      <input type="date" class="form-control" name="publishDate" [(ngModel)]="story.publishDate">
+      <input type="date" class="form-control" name="publishDate" [(ngModel)]="story.publishDate" required>
     </div>
     <div class="form-group my-3">
       <label class="form-label">ტექსტი</label>
-      <textarea name="content" id="" cols="30" rows="15" class="form-control" [(ngModel)]="story.content"></textarea>
+      <textarea name="content" cols="30" rows="15" class="form-control" [(ngModel)]="story.content" required></textarea>
     </div>
     <div class="form-group mt-3">
       <button class="btn btn-primary" type="submit" [disabled]="storyAddForm.invalid">დამატება</button>
