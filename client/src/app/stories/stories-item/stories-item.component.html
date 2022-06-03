@@ -4,7 +4,7 @@
   </div>
   <div class="card-body">
     <h5 class="card-title">{{story.name}}</h5>
-    <p *ngIf="story.description.length > 90" class="card-text">{{story.description | slice:0:90}}...</p>
+    <p *ngIf="story.description.length > 90" class="card-text">{{story.description | slice:0:40}}...</p>
     <p *ngIf="story.description.length <= 90" class="card-text">{{story.description}}</p>
     <div>
       <a class="btn btn-primary" [routerLink]="['/stories/' + story.id]">წაკითხვა</a>
