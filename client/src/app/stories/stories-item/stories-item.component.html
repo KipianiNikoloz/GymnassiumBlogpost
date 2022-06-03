@@ -3,9 +3,14 @@
     {{story.author}}
   </div>
   <div class="card-body">
-    <h5 class="card-title">{{story.name}}</h5>
-    <p *ngIf="story.description.length > 90" class="card-text">{{story.description | slice:0:40}}...</p>
-    <p *ngIf="story.description.length <= 90" class="card-text">{{story.description}}</p>
+    <h5 *ngIf="story.name.length > 30; else shorter_h" class="card-title">{{story.name | slice:0:30}}...</h5>
+    <ng-template #shorter_h>
+      <h5 class="card-title">{{story.name}}</h5>
+    </ng-template>
+    <p *ngIf="story.description.length > 90; else shorter_p" class="card-text">{{story.description | slice:0:90}}...</p>
+    <ng-template #shorter_p>
+      <p *ngIf="story.description.length <= 90" class="card-text">{{story.description}}</p>
+    </ng-template>
     <div>
       <a class="btn btn-primary" [routerLink]="['/stories/' + story.id]">წაკითხვა</a>
       <a class="btn btn-warning m-2" *ngIf="(accountService.currentAdmin$ | async)" [routerLink]="['/stories/update/' + story.id]">რედაქტირება</a>

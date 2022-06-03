@@ -25,3 +25,10 @@
 /mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Infrastructure/obj/Debug/net6.0/Infrastructure.dll
 /mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Infrastructure/obj/Debug/net6.0/ref/Infrastructure.dll
 /mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Infrastructure/obj/Debug/net6.0/Infrastructure.pdb
+/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Infrastructure/bin/Debug/net6.0/Infrastructure.deps.json
+/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Infrastructure/bin/Debug/net6.0/Infrastructure.runtimeconfig.json
+/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Infrastructure/bin/Debug/net6.0/ref/Infrastructure.dll
+/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Infrastructure/bin/Debug/net6.0/Core.dll
+/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Infrastructure/bin/Debug/net6.0/Core.pdb
+/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Infrastructure/obj/Debug/net6.0/Infrastructure.csproj.CopyComplete
+/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Infrastructure/obj/Debug/net6.0/Infrastructure.genruntimeconfig.cache

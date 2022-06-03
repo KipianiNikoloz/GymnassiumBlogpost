@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cO3ITvzFqHM+hjhsM+b4x9G0iEGQb3Lp/VuEVz9XEInbVyVsN9QtpunsJX48BMZJW8wivhzNi9QFcy+tQUOjug==",
+  "dgSpecHash": "xgwKZDk8UOYADWxrpiaO3k6KSSB4d1YB81gY0K6Fh4mRHwmU+xTl3ykQ9RVC2LSbUuT830s7666AhQ79hOk2BA==",
   "success": true,
-  "projectFilePath": "/home/nikolozkipiani/Documents/GymnassiumBlogpost/Infrastructure/Infrastructure.csproj",
+  "projectFilePath": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Infrastructure/Infrastructure.csproj",
   "expectedPackageFiles": [
     "/home/nikolozkipiani/.nuget/packages/automapper/11.0.0/automapper.11.0.0.nupkg.sha512",
     "/home/nikolozkipiani/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/11.0.0/automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
