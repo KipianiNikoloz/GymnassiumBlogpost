@@ -3,7 +3,7 @@
     {{story.author}}
   </div>
   <div class="card-body">
-    <h5 *ngIf="story.name.length > 30; else shorter_h" class="card-title">{{story.name | slice:0:30}}...</h5>
+    <h5 *ngIf="story.name.length > 22; else shorter_h" class="card-title">{{story.name | slice:0:22}}...</h5>
     <ng-template #shorter_h>
       <h5 class="card-title">{{story.name}}</h5>
     </ng-template>
