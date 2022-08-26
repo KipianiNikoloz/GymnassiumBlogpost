@@ -27,7 +27,20 @@ namespace API
                 try
                 {
                     var context = services.GetService<DataContext>();
+                    var userManager = services.GetService<UserManager<AppUser>>();
+                    var roleManager = services.GetService<RoleManager<AppRole>>();
 
+                    await roleManager.CreateAsync(new AppRole { Name = "Admin" });
+
+                    var admin = new AppUser()
+                    {
+                        UserName = "admin"
+                    };
+
+                    await userManager.CreateAsync(admin, "AdminAdmin76");
+
+                    await userManager.AddToRoleAsync(admin, "Admin");
+                    
                     await context.Database.MigrateAsync();
                 }
                 catch (Exception ex)

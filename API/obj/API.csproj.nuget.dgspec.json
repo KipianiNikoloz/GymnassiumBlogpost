@@ -10,11 +10,11 @@
         "projectUniqueName": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/API/API.csproj",
         "projectName": "API",
         "projectPath": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/API/API.csproj",
-        "packagesPath": "/home/nikolozkipiani/.nuget/packages/",
+        "packagesPath": "/home/nikolokipiani/.nuget/packages/",
         "outputPath": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/nikolozkipiani/.nuget/NuGet/NuGet.Config"
+          "/home/nikolokipiani/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -69,11 +69,11 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[6.4.0, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
-              "version": "[6.15.1, )"
+              "version": "[6.22.1, )"
             }
           },
           "imports": [
@@ -94,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.105/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.108/RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -104,11 +104,11 @@
         "projectUniqueName": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Core/Core.csproj",
         "projectName": "Core",
         "projectPath": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Core/Core.csproj",
-        "packagesPath": "/home/nikolozkipiani/.nuget/packages/",
+        "packagesPath": "/home/nikolokipiani/.nuget/packages/",
         "outputPath": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/nikolozkipiani/.nuget/NuGet/NuGet.Config"
+          "/home/nikolokipiani/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -156,7 +156,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.105/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.108/RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -166,11 +166,11 @@
         "projectUniqueName": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Infrastructure/Infrastructure.csproj",
         "projectName": "Infrastructure",
         "projectPath": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Infrastructure/Infrastructure.csproj",
-        "packagesPath": "/home/nikolozkipiani/.nuget/packages/",
+        "packagesPath": "/home/nikolokipiani/.nuget/packages/",
         "outputPath": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/nikolozkipiani/.nuget/NuGet/NuGet.Config"
+          "/home/nikolokipiani/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -226,7 +226,7 @@
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
-              "version": "[6.15.1, )"
+              "version": "[6.22.1, )"
             }
           },
           "imports": [
@@ -244,7 +244,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.105/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.108/RuntimeIdentifierGraph.json"
         }
       }
     }

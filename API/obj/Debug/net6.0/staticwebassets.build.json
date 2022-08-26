@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "I5NQRPeQgWk7dSDN4gekzH/9eQ8lu3e1LlyOQJoOZnI=",
+  "Hash": "UGj9kLbQ+kIcF41g39OFW3Hj5DgFoX5Tr9JwYIQBpiI=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
@@ -102,12 +102,12 @@
       "OriginalItemSpec": "wwwroot/466.d9fd9991ca91dbb2b57c.js"
     },
     {
-      "Identity": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/API/wwwroot/878.28dc299e998d069c402b.js",
+      "Identity": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/API/wwwroot/878.164bce9ec87a037315ba.js",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/API/wwwroot/",
       "BasePath": "_content/API",
-      "RelativePath": "878.28dc299e998d069c402b.js",
+      "RelativePath": "878.164bce9ec87a037315ba.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -116,15 +116,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/878.28dc299e998d069c402b.js"
+      "OriginalItemSpec": "wwwroot/878.164bce9ec87a037315ba.js"
     },
     {
-      "Identity": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/API/wwwroot/902.a55be9639c28785d196d.js",
+      "Identity": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/API/wwwroot/902.346053ec9054487fcb5d.js",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/API/wwwroot/",
       "BasePath": "_content/API",
-      "RelativePath": "902.a55be9639c28785d196d.js",
+      "RelativePath": "902.346053ec9054487fcb5d.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -133,7 +133,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/902.a55be9639c28785d196d.js"
+      "OriginalItemSpec": "wwwroot/902.346053ec9054487fcb5d.js"
     },
     {
       "Identity": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/API/wwwroot/930.275c833fbf2acf2fcb23.js",
@@ -425,12 +425,12 @@
       "OriginalItemSpec": "wwwroot/polyfills.d15807b8046b85176637.js"
     },
     {
-      "Identity": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/API/wwwroot/runtime.01fa8d3200de40eb4ac2.js",
+      "Identity": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/API/wwwroot/runtime.d4f1a46e4c9bc94b86ae.js",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/API/wwwroot/",
       "BasePath": "_content/API",
-      "RelativePath": "runtime.01fa8d3200de40eb4ac2.js",
+      "RelativePath": "runtime.d4f1a46e4c9bc94b86ae.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -439,7 +439,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/runtime.01fa8d3200de40eb4ac2.js"
+      "OriginalItemSpec": "wwwroot/runtime.d4f1a46e4c9bc94b86ae.js"
     },
     {
       "Identity": "/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/API/wwwroot/scripts.8c895b14ac5afb48e4f9.js",
