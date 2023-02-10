@@ -27,7 +27,7 @@ namespace API
                 try
                 {
                     var context = services.GetService<DataContext>();
-                    var userManager = services.GetService<UserManager<AppUser>>();
+                    /*var userManager = services.GetService<UserManager<AppUser>>();
                     var roleManager = services.GetService<RoleManager<AppRole>>();
 
                     await roleManager.CreateAsync(new AppRole { Name = "Admin" });
@@ -39,7 +39,7 @@ namespace API
 
                     await userManager.CreateAsync(admin, "AdminAdmin76");
 
-                    await userManager.AddToRoleAsync(admin, "Admin");
+                    await userManager.AddToRoleAsync(admin, "Admin");*/
                     
                     await context.Database.MigrateAsync();
                 }
