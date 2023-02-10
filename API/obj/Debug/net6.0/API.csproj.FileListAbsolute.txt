@@ -677,3 +677,5 @@
 /mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/API/obj/Debug/net6.0/staticwebassets.development.json
 /mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/API/obj/Debug/net6.0/API.csproj.CopyComplete
 /mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/API/obj/Debug/net6.0/API.genruntimeconfig.cache
+/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/API/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+/mnt/dc504d40-76a9-47b9-9c7e-308357be7e40/Documents/GymnassiumBlogpost/API/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
